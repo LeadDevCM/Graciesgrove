@@ -17,7 +17,7 @@ export default function Home() {
             className="w-full h-full object-cover object-center"
           />
           {/* Enhanced gradient for better text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-forest/90 via-forest/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-forest/90 via-forest/80 to-transparent" />
         </div>
         
         <div className="container mx-auto px-4 md:px-6 relative h-full flex items-center">
@@ -25,13 +25,13 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-xl text-cream space-y-6"
+            className="max-w-xl space-y-6"
           >
-            <span className="inline-block px-3 py-1 border border-sage/50 rounded-full text-xs font-medium tracking-wider uppercase bg-forest/30 backdrop-blur-sm">
+            <span className="inline-block px-3 py-1 border border-cream/50 rounded-full text-xs font-bold tracking-wider uppercase bg-forest/40 text-cream backdrop-blur-sm">
               Natural Dog Wellness
             </span>
-            <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight">
-              Healing from <br/><span className="italic text-sage">the Heart</span>
+            <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight text-cream">
+              Healing from <br/><span className="italic text-tan">the Heart</span>
             </h1>
             <p className="text-lg md:text-xl text-cream/90 leading-relaxed font-light">
               Handcrafted, organic skincare and wellness products for your soul dog. Inspired by Gracie, made with love.
@@ -60,21 +60,21 @@ export default function Home() {
               <div className="w-16 h-16 rounded-full bg-sage/20 flex items-center justify-center text-forest mb-2">
                 <Leaf className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-serif font-bold">100% Organic Ingredients</h3>
+              <h3 className="text-xl font-serif font-bold text-forest">100% Organic Ingredients</h3>
               <p className="text-charcoal/70">Sourced from nature, free from harsh chemicals and artificial fragrances.</p>
             </div>
             <div className="flex flex-col items-center space-y-4">
               <div className="w-16 h-16 rounded-full bg-sage/20 flex items-center justify-center text-forest mb-2">
                 <Heart className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-serif font-bold">Mission Driven</h3>
+              <h3 className="text-xl font-serif font-bold text-forest">Mission Driven</h3>
               <p className="text-charcoal/70">A portion of every sale goes towards hemangiosarcoma research and awareness.</p>
             </div>
             <div className="flex flex-col items-center space-y-4">
               <div className="w-16 h-16 rounded-full bg-sage/20 flex items-center justify-center text-forest mb-2">
                 <Shield className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-serif font-bold">Handcrafted with Care</h3>
+              <h3 className="text-xl font-serif font-bold text-forest">Handcrafted with Care</h3>
               <p className="text-charcoal/70">Small-batch production ensures the highest quality and potency in every jar.</p>
             </div>
           </div>
@@ -141,7 +141,7 @@ export default function Home() {
           />
         </div>
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center max-w-3xl mx-auto space-y-8">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold">The Future Sanctuary</h2>
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-cream">The Future Sanctuary</h2>
           <p className="text-xl text-cream/80 leading-relaxed font-light">
             We are building a 400-acre haven in Utah. A place where dogs can run free, heal, and live their best lives. Gracie's Grove is more than a brand; it's a promise of a better future.
           </p>

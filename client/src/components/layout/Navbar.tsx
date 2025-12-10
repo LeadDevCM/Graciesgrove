@@ -68,7 +68,7 @@ export function Navbar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setIsOpen(false)}
-              className="fixed inset-0 bg-black/20 z-50 md:hidden"
+              className="fixed inset-0 bg-black/40 z-50 md:hidden"
             />
             <motion.div
               initial={{ x: "-100%" }}
@@ -77,9 +77,9 @@ export function Navbar() {
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
               className="fixed inset-y-0 left-0 w-[280px] bg-cream z-50 shadow-xl md:hidden flex flex-col"
             >
-              <div className="p-6 flex justify-between items-center border-b border-forest/10">
+              <div className="p-6 flex justify-between items-center border-b border-forest/10 bg-forest/5">
                 <span className="font-serif text-xl text-forest font-bold">Menu</span>
-                <button onClick={() => setIsOpen(false)} className="p-2 text-charcoal/60 hover:text-forest">
+                <button onClick={() => setIsOpen(false)} className="p-2 text-forest hover:bg-forest/10 rounded-full transition-colors">
                   <X className="w-6 h-6" />
                 </button>
               </div>
@@ -88,14 +88,21 @@ export function Navbar() {
                   <Link key={link.href} href={link.href}>
                     <a 
                       onClick={() => setIsOpen(false)}
-                      className={`text-lg font-medium ${
-                        location === link.href ? "text-forest" : "text-charcoal/80"
+                      className={`text-lg font-medium px-4 py-2 rounded-lg transition-colors ${
+                        location === link.href ? "bg-forest/10 text-forest" : "text-charcoal/80 hover:bg-forest/5 hover:text-forest"
                       }`}
                     >
                       {link.label}
                     </a>
                   </Link>
                 ))}
+              </div>
+              
+              {/* Mobile Footer in Menu */}
+              <div className="mt-auto p-6 border-t border-forest/10 bg-forest/5">
+                <p className="text-xs text-charcoal/60 text-center">
+                  Inspired by Gracie, made with love.
+                </p>
               </div>
             </motion.div>
           </>
