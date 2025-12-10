@@ -1,5 +1,5 @@
 import { Link, useLocation } from "wouter";
-import { ShoppingBag, Menu, X, Search, Home, ShoppingCart, BookOpen, Heart } from "lucide-react";
+import { ShoppingBag, Menu, X, Search, Home, ShoppingCart, BookOpen, Heart, Leaf } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -11,7 +11,8 @@ export function Navbar() {
     { href: "/", label: "Home", icon: Home },
     { href: "/shop", label: "Shop", icon: ShoppingCart },
     { href: "/story", label: "Our Story", icon: BookOpen },
-    { href: "/sanctuary", label: "The Sanctuary", icon: Heart },
+    { href: "/sanctuary", label: "Sanctuary", icon: Heart },
+    { href: "/ingredients", label: "Ingredients", icon: Leaf },
   ];
 
   return (
