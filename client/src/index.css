@@ -9,12 +9,12 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   
-  /* Gracie's Grove Palette */
-  --color-forest: hsl(142 33% 26%);
-  --color-sage: hsl(101 23% 56%);
-  --color-tan: hsl(30 54% 64%);
-  --color-cream: hsl(30 56% 97%);
-  --color-charcoal: hsl(0 0% 20%);
+  /* Gracie's Grove Palette - Cedar City Web Design Spec */
+  --color-forest: #2D5A3D;
+  --color-sage: #87A878;
+  --color-tan: #D4A574;
+  --color-cream: #FDF8F3;
+  --color-charcoal: #333333;
 
   --color-background: var(--color-cream);
   --color-foreground: var(--color-charcoal);

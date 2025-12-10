@@ -32,7 +32,8 @@ export function Footer() {
               <li><Link href="/story"><a className="hover:text-tan transition-colors">Our Story</a></Link></li>
               <li><Link href="/sanctuary"><a className="hover:text-tan transition-colors">The Sanctuary</a></Link></li>
               <li><Link href="/ingredients"><a className="hover:text-tan transition-colors">Ingredients</a></Link></li>
-              <li><Link href="/blog"><a className="hover:text-tan transition-colors">Blog</a></Link></li>
+              <li><Link href="/faq"><a className="hover:text-tan transition-colors">FAQ</a></Link></li>
+              <li><Link href="/contact"><a className="hover:text-tan transition-colors">Contact Us</a></Link></li>
             </ul>
           </div>
 

@@ -6,6 +6,11 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import Shop from "@/pages/Shop";
+import Story from "@/pages/Story";
+import Sanctuary from "@/pages/Sanctuary";
+import Ingredients from "@/pages/Ingredients";
+import Contact from "@/pages/Contact";
+import FAQ from "@/pages/FAQ";
 import { Layout } from "@/components/layout/Layout";
 
 function Router() {
@@ -14,8 +19,11 @@ function Router() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/shop" component={Shop} />
-        <Route path="/story" component={() => <div className="p-24 text-center text-forest font-serif text-2xl">Our Story - Coming Soon</div>} />
-        <Route path="/sanctuary" component={() => <div className="p-24 text-center text-forest font-serif text-2xl">The Sanctuary - Coming Soon</div>} />
+        <Route path="/story" component={Story} />
+        <Route path="/sanctuary" component={Sanctuary} />
+        <Route path="/ingredients" component={Ingredients} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/faq" component={FAQ} />
         <Route component={NotFound} />
       </Switch>
     </Layout>
