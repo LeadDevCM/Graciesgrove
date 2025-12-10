@@ -18,10 +18,10 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-serif font-medium text-sage">Shop</h4>
             <ul className="space-y-2 text-sm text-cream/80">
-              <li><Link href="/shop"><a className="hover:text-tan transition-colors">All Products</a></Link></li>
-              <li><Link href="/shop?cat=balms"><a className="hover:text-tan transition-colors">Balms & Salves</a></Link></li>
-              <li><Link href="/shop?cat=wellness"><a className="hover:text-tan transition-colors">Wellness</a></Link></li>
-              <li><Link href="/shop?cat=sets"><a className="hover:text-tan transition-colors">Gift Sets</a></Link></li>
+              <li><Link href="/shop" className="hover:text-tan transition-colors">All Products</Link></li>
+              <li><Link href="/shop?cat=balms" className="hover:text-tan transition-colors">Balms & Salves</Link></li>
+              <li><Link href="/shop?cat=wellness" className="hover:text-tan transition-colors">Wellness</Link></li>
+              <li><Link href="/shop?cat=sets" className="hover:text-tan transition-colors">Gift Sets</Link></li>
             </ul>
           </div>
 
@@ -29,10 +29,10 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-serif font-medium text-sage">Learn</h4>
             <ul className="space-y-2 text-sm text-cream/80">
-              <li><Link href="/story"><a className="hover:text-tan transition-colors">Our Story</a></Link></li>
-              <li><Link href="/sanctuary"><a className="hover:text-tan transition-colors">The Sanctuary</a></Link></li>
-              <li><Link href="/ingredients"><a className="hover:text-tan transition-colors">Ingredients</a></Link></li>
-              <li><Link href="/blog"><a className="hover:text-tan transition-colors">Blog</a></Link></li>
+              <li><Link href="/story" className="hover:text-tan transition-colors">Our Story</Link></li>
+              <li><Link href="/sanctuary" className="hover:text-tan transition-colors">The Sanctuary</Link></li>
+              <li><Link href="/ingredients" className="hover:text-tan transition-colors">Ingredients</Link></li>
+              <li><Link href="/blog" className="hover:text-tan transition-colors">Blog</Link></li>
             </ul>
           </div>
 

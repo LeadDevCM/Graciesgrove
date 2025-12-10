@@ -37,15 +37,11 @@ export default function Home() {
               Handcrafted, organic skincare and wellness products for your soul dog. Inspired by Gracie, made with love.
             </p>
             <div className="flex gap-4 pt-4">
-              <Link href="/shop">
-                <a className="px-8 py-4 bg-tan text-forest font-bold rounded hover:bg-cream transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
-                  Shop Collection
-                </a>
+              <Link href="/shop" className="px-8 py-4 bg-tan text-forest font-bold rounded hover:bg-cream transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 inline-block">
+                Shop Collection
               </Link>
-              <Link href="/story">
-                <a className="px-8 py-4 bg-transparent border border-cream text-cream font-bold rounded hover:bg-cream/10 transition-colors">
-                  Our Story
-                </a>
+              <Link href="/story" className="px-8 py-4 bg-transparent border border-cream text-cream font-bold rounded hover:bg-cream/10 transition-colors inline-block">
+                Our Story
               </Link>
             </div>
           </motion.div>
@@ -145,10 +141,8 @@ export default function Home() {
           <p className="text-xl text-cream/80 leading-relaxed font-light">
             We are building a 400-acre haven in Utah. A place where dogs can run free, heal, and live their best lives. Gracie's Grove is more than a brand; it's a promise of a better future.
           </p>
-          <Link href="/sanctuary">
-            <a className="inline-block border-2 border-tan text-tan px-8 py-3 rounded font-bold hover:bg-tan hover:text-forest transition-colors uppercase tracking-widest text-sm">
-              Discover Our Vision
-            </a>
+          <Link href="/sanctuary" className="inline-block border-2 border-tan text-tan px-8 py-3 rounded font-bold hover:bg-tan hover:text-forest transition-colors uppercase tracking-widest text-sm">
+            Discover Our Vision
           </Link>
         </div>
       </section>

@@ -34,21 +34,21 @@ export function Navbar() {
           </button>
 
           {/* Logo */}
-          <Link href="/">
-            <a className="text-2xl md:text-3xl font-serif font-bold text-forest tracking-tight">
-              Gracie's Grove
-            </a>
+          <Link href="/" className="text-2xl md:text-3xl font-serif font-bold text-forest tracking-tight">
+            Gracie's Grove
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {mainLinks.map((link) => (
-              <Link key={link.href} href={link.href}>
-                <a className={`text-sm uppercase tracking-wider font-medium hover:text-forest transition-colors ${
+              <Link 
+                key={link.href} 
+                href={link.href}
+                className={`text-sm uppercase tracking-wider font-medium hover:text-forest transition-colors ${
                   location === link.href ? "text-forest border-b-2 border-forest" : "text-charcoal/80"
-                }`}>
-                  {link.label}
-                </a>
+                }`}
+              >
+                {link.label}
               </Link>
             ))}
           </div>
@@ -107,18 +107,18 @@ export function Navbar() {
                     {mainLinks.map((link) => {
                       const Icon = link.icon;
                       return (
-                        <Link key={link.href} href={link.href}>
-                          <a 
-                            onClick={() => setIsOpen(false)}
-                            className={`flex items-center gap-4 px-6 py-4 border-b border-gray-100 transition-colors ${
-                              location === link.href 
-                                ? "bg-forest/5 text-forest font-bold border-l-4 border-l-forest" 
-                                : "text-gray-800 hover:bg-gray-50 font-medium border-l-4 border-l-transparent"
-                            }`}
-                          >
-                            <Icon className={`w-5 h-5 ${location === link.href ? "text-forest" : "text-gray-400"}`} />
-                            <span className="text-lg">{link.label}</span>
-                          </a>
+                        <Link 
+                          key={link.href} 
+                          href={link.href}
+                          onClick={() => setIsOpen(false)}
+                          className={`flex items-center gap-4 px-6 py-4 border-b border-gray-100 transition-colors ${
+                            location === link.href 
+                              ? "bg-forest/5 text-forest font-bold border-l-4 border-l-forest" 
+                              : "text-gray-800 hover:bg-gray-50 font-medium border-l-4 border-l-transparent"
+                          }`}
+                        >
+                          <Icon className={`w-5 h-5 ${location === link.href ? "text-forest" : "text-gray-400"}`} />
+                          <span className="text-lg">{link.label}</span>
                         </Link>
                       );
                     })}
@@ -129,14 +129,14 @@ export function Navbar() {
                     {footerLinks.map((link) => {
                       const Icon = link.icon;
                       return (
-                        <Link key={link.href} href={link.href}>
-                          <a 
-                            onClick={() => setIsOpen(false)}
-                            className="flex items-center gap-4 px-6 py-3 hover:bg-gray-50 text-gray-600 hover:text-forest transition-colors"
-                          >
-                            <Icon className="w-4 h-4 text-gray-400" />
-                            <span className="text-base font-medium">{link.label}</span>
-                          </a>
+                        <Link 
+                          key={link.href} 
+                          href={link.href}
+                          onClick={() => setIsOpen(false)}
+                          className="flex items-center gap-4 px-6 py-3 hover:bg-gray-50 text-gray-600 hover:text-forest transition-colors"
+                        >
+                          <Icon className="w-4 h-4 text-gray-400" />
+                          <span className="text-base font-medium">{link.label}</span>
                         </Link>
                       );
                     })}
