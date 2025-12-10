@@ -3,9 +3,7 @@ import { ArrowRight, Heart, Shield, Leaf } from "lucide-react";
 import { Link } from "wouter";
 import productBalm from "@assets/generated_images/natural_dog_paw_balm_tin_on_wood.png";
 import sanctuaryImage from "@assets/generated_images/scenic_mountain_meadow_for_sanctuary.png";
-
-// Using the image found on graciesgrove.com
-const heroImage = "https://img1.wsimg.com/isteam/getty/1822810638";
+import gracieHero from "@assets/IMG_0595_1765376060855.jpeg";
 
 export default function Home() {
   return (
@@ -14,11 +12,12 @@ export default function Home() {
       <section className="relative h-[85vh] w-full overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src={heroImage} 
-            alt="Gracie - Golden Retriever" 
-            className="w-full h-full object-cover"
+            src={gracieHero} 
+            alt="Gracie - The Soul Dog" 
+            className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-forest/80 via-forest/40 to-transparent" />
+          {/* Enhanced gradient for better text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-forest/90 via-forest/50 to-transparent" />
         </div>
         
         <div className="container mx-auto px-4 md:px-6 relative h-full flex items-center">
